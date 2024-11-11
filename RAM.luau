@@ -4,7 +4,7 @@ local URL = "https://ram.bulkbrains.com/api/fetchPlayer"
 
 game:GetService("Players").PlayerAdded:Connect(function(player)
 	local id = player.UserId
-	local data = "player=729700937"
+	local data = "player=" .. id
 	
 	local response
 	local success, err = pcall(function()
